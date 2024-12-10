@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    
+   
+    
+    text-align: center;
+    /* padding: 30px; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+
+
+}
+.container div{
+   border: 2px solid black;
+}
+
+.box1{
+    grid-row: span 2;
+}
+
+.box2 , .box3{
+    grid-column: span 2;
+
+}
+.box4{
+    grid-column: span 3;
+}
+.box7{
+    grid-row: span 2;
+}
+.box6{
+    grid-row: span 2;
+}
+
