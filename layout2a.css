@@ -23,3 +23,41 @@
 
     
 }
+@media screen and (min-width:320px){
+    .parent{
+        width:23%
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column{
+        width: 100%;
+    }
+}
+@media screen and (min-width:680px){
+    .parent{
+        width:50%;
+
+    }
+    .row{
+        display: flex;
+    }
+
+    .column{
+        width: 50%;
+    }
+}
+@media screen and (min-width:1020px){
+    .parent{
+        width:25%;
+
+    }
+    .row{
+        display: flex;
+    }
+
+    .column{
+        width: 25%;
+    }
+}

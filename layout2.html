@@ -7,45 +7,55 @@
     <title>loyout2</title>
     <!-- <link rel="stylesheet" href="./layout2.css"> -->
     <style>
-
-        .container1 div{
+        .container1 div {
             border: 1px solid black;
         }
+
         .container1 {
             width: 90%;
             margin: auto;
-            border: 1px solid black;
+
             display: grid;
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
 
             text-align: center;
-            grid-template-areas:
-                 1 2 
-                3 4 5;
-        }
 
-        /* .box1 {
-            grid-area: 1;
-            grid-column: span 1.5;
-        }
-
-        .box2 {
-            grid-area: 2;
-            grid-column: span 1.5;
-        }
-
-        .box3 {
-            grid-area: 3;
-        }
-
-        .box4 {
-            grid-area: 4;
         }
 
         .box5 {
-            grid-area: 5;
-        } */
+            grid-column: span 2;
+        }
+
+        @media screen and (min-width:320px) {
+            .container {
+                width: 20%;
+                display: grid;
+                grid-template-columns: repeat(1 1fr);
+                grid-template-rows: repeat(1 1fr);
+            }
+
+        }
+
+        @media screen and (min-width:680px) {
+            .container {
+                width: 50%;
+                display: grid;
+                grid-template-columns: repeat(2 1fr);
+                grid-template-rows: repeat(2 1fr);
+            }
+
+        }
+
+        @media screen and (min-width:1020px) {
+            .container {
+                width: 90%;
+                display: grid;
+                grid-template-columns: repeat(3 1fr);
+                grid-template-rows: repeat(2 1fr);
+            }
+
+        }
     </style>
 
 </head>

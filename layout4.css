@@ -1,24 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 90%;
-    border: 1px solid red;
 
-display: grid;
-grid-template-columns: repeat(4,1fr);
-grid-template-rows: repeat(2,1fr);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 
 }
-.container div{
-    border: 1px solid red;
-}
 
-.box3 , .box4{
+
+.box3,
+.box4 {
     grid-column: span 2;
 }
 
+@media screen and (max-width:1450px) {
+    .container {
+        width: 20%;
 
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .box3,
+    .box4 {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        width: 40%;
+
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+
+    .box3,
+    .box4 {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 80%;
+
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+    }
+
+
+    /* .box3 , .box4{
+        grid-column: span 2;
+    } */
+}

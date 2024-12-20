@@ -4,13 +4,11 @@
     box-sizing: border-box;
 }
 
-.container div{
-    border: 1px solid black;
-}
+
 .container{
     width: 80%;
     margin: auto;
-    border: 1px solid black;
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -19,8 +17,18 @@
     grid-row: span 2;
 }
 
-.container1 div{
-    border: 1px solid black;
+
+
+@media screen and (min-width:320px){
+    .container{
+        width: 20%;
+        margin: auto;
+        
+        display: grid;
+       
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
 }
 
 
